@@ -8,13 +8,16 @@ h1{
 	font-weight: bold;
 	margin: 20px 0;
 }
-
+.ba-container{
+	font-size: 0;
+}
 
 /* Layout */
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
 	max-width: 1200px;
+	padding: 20px;
 }
 
 
