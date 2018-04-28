@@ -10,6 +10,27 @@ h1{
 }
 .ba-container{
 	font-size: 0;
+	position: relative;
+}
+
+.ba-container__overlay {
+	display: none;
+	background: #000;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.ba-container__overlay-text {
+	position: absolute;
+	font-size: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #FFF;
 }
 
 /* Layout */
@@ -67,5 +88,42 @@ select:focus {
 
 }
 textarea {
+
+}
+
+
+@media screen and (max-width: 1200px) {
+	.ba-container__overlay {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) and (orientation: landscape){
+	.ba-container__overlay {
+		display: block;
+	}
+
+	html, body {
+		max-height: 100vh;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.ba-container__overlay {
+		display: block;
+	}
+
+
+	html, body {
+		max-height: 100vh;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 767px) and (orientation: landscape){
+	.ba-container__overlay {
+		display: none;
+	}
 
 }
