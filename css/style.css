@@ -96,6 +96,11 @@ textarea {
 	.ba-container__overlay {
 		display: none;
 	}
+
+	html, body {
+		max-height: 100%;
+		overflow: visible;
+	}
 }
 
 @media (max-width: 1200px) and (orientation: landscape){
@@ -114,7 +119,6 @@ textarea {
 		display: block;
 	}
 
-
 	html, body {
 		max-height: 100vh;
 		overflow: hidden;
@@ -124,6 +128,11 @@ textarea {
 @media (max-width: 767px) and (orientation: landscape){
 	.ba-container__overlay {
 		display: none;
+	}
+
+	html, body {
+		max-height: 100%;
+		overflow: visible;
 	}
 
 }
